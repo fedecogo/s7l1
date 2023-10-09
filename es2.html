@@ -14,33 +14,31 @@
   <body>
     <div class="container text-center">
       <div class="row">
-        <div class="col-8 offset-2 mt-5">
+        <div class="col-8 offset-2">
           <form id="petForm">
             <label for="petname">Pet Name:</label>
-            <input type="text" id="petname" class="form-control mt-2" required />
+            <input type="text" id="petname" required />
             <br />
             <label for="owner">Owner:</label>
-            <input type="text" id="owner" class="form-control mt-2" required />
+            <input type="text" id="owner" required />
             <br />
             <label for="specie">Species:</label>
-            <input type="text" id="specie" class="form-control mt-2" required />
+            <input type="text" id="specie" required />
             <br />
             <label for="breed">Breed:</label>
-            <input type="text" id="breed" class="form-control mt-2" required />
+            <input type="text" id="breed" required />
             <br />
-            <button type="submit" class="btn btn-outline-success mt-2">
-              Aggiungi Animale
-            </button>
+            <button type="submit">Aggiungi Animale</button>
           </form>
 
           <ul id="petsList"></ul>
 
-          <button onclick="checkForDuplicateOwners()" class="btn btn-outline-success mt-2">
+          <button onclick="checkForDuplicateOwners()">
             Controlla se c'è un Owner che ha due animali
           </button>
         </div>
       </div>
-    </div
+    </div>
 
     <script src="es2.js"></script>
     <script
